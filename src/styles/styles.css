@@ -1,0 +1,9 @@
+/* styles.css */
+.hero-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero-title {
+    transition: color 0.3s ease;
+  }
+  
