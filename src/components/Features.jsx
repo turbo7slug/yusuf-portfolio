@@ -1,9 +1,9 @@
-import { FaCode, FaServer, FaPaintBrush } from 'react-icons/fa'; // Example icons
+import { FaCode, FaServer, FaRobot } from 'react-icons/fa'; // Updated icons
 
 const features = [
   { title: 'Web Development', description: 'Building responsive and performant web applications.', icon: <FaCode size={50} /> },
   { title: 'Backend Services', description: 'Robust backend systems with Node.js and MongoDB.', icon: <FaServer size={50} /> },
-  { title: 'UI/UX Design', description: 'Designing intuitive user experiences with modern UI frameworks.', icon: <FaPaintBrush size={50} /> }
+  { title: 'AI Integration', description: 'Integrating AI and chatbot functionalities into applications.', icon: <FaRobot size={50} /> }
 ];
 
 const Features = () => (

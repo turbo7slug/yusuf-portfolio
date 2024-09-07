@@ -4,6 +4,7 @@ import Features from './components/Features';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
+import Experience from './components/Experience';
 import './styles/styles.css';
 
 
@@ -13,8 +14,9 @@ function App() {
       <Header />
       <Hero />
       <Features />
+      <Experience/>
       <Projects />
-      <Testimonials/>
+      
       <Contact />
     </div>
   );

@@ -16,9 +16,9 @@ const Header = () => {
           {/* Wrapper for the GIF logo */}
           <div className="w-10 h-10 overflow-hidden rounded-full">
             <img
-              src="https://media.giphy.com/media/26xBtnTEjWcGtceiY/giphy.gif"
+              src="/pyramid.png"
               alt="logo"
-              className="w-full h-full object-cover"
+              className="w-30 h-30 object-cover"
             />
           </div>
 
@@ -55,8 +55,8 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#testimonials" className="text-gray-400 hover:text-white transition duration-300">
-              Testimonials
+            <a href="#experience" className="text-gray-400 hover:text-white transition duration-300">
+             Experience
             </a>
           </li>
           <li>
