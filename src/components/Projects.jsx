@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 const projects = [
-  { title: 'Real Estate App', description: 'A real estate management app built with MERN stack.', image: 'https://via.placeholder.com/600x400' },
-  { title: 'Blog Platform', description: 'A blog app built with React and Node.js.', image: 'https://via.placeholder.com/600x400' },
-  { title: '2048 Puzzle Game', description: 'A clone of the 2048 puzzle game.', image: 'https://via.placeholder.com/600x400' },
-  { title: 'E-Commerce Website', description: 'An online store built with Django.', image: 'https://via.placeholder.com/600x400' },
-  { title: 'Weather App', description: 'A weather forecasting app using React.', image: 'https://via.placeholder.com/600x400' },
-  { title: 'Chat Application', description: 'A real-time chat app using Socket.io.', image: 'https://via.placeholder.com/600x400' },
+  { title: 'Real Estate App', description: 'A real estate management app built with MERN stack.', image: '/real_estate.png', link: 'https://mesa-verde-real-estate.vercel.app/' },
+  { title: 'Prompt Hub', description: 'A Next JS platform to share your AI prompts', image: '/prompt_hub.png', link: 'https://prompt-hub-rust.vercel.app/' },
+  { title: '2048 Puzzle Game', description: 'A clone of the 2048 puzzle game.', image: '/2048.png', link: 'https://turbo7slug.github.io/2048-puzzleGame/' },
+  { title: 'E-Commerce Website', description: 'An online store built with Django.', image: 'https://via.placeholder.com/600x400', link: 'https://github.com/user/ecommerce-store' },
+  { title: 'Life Tracker', description: 'Visualize your lifespan ', image: '/life.png', link: 'https://life-tracker-eight.vercel.app/' },
+  { title: 'Chat Application', description: 'A real-time chat app using Socket.io.', image: 'https://via.placeholder.com/600x400', link: 'https://github.com/user/chat-application' },
 ];
 
 const Projects = () => {
@@ -22,14 +22,12 @@ const Projects = () => {
 
     window.addEventListener('resize', handleResize);
 
-   
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   useEffect(() => {
-    
     if (currentIndex >= totalProjects - projectsToShow + 1) {
       setCurrentIndex(0);
     }
@@ -55,7 +53,7 @@ const Projects = () => {
                   <img src={project.image} alt={project.title} className="rounded-md mb-4 w-full object-cover h-48 transition-transform duration-300 transform hover:scale-110" />
                   <h3 className="text-xl font-semibold text-light mb-2">{project.title}</h3>
                   <p className="text-muted">{project.description}</p>
-                  <a href="#contact" className="relative inline-block px-6 py-3 rounded-md group overflow-hidden mt-4">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative inline-block px-6 py-3 rounded-md group overflow-hidden mt-4">
                     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-purple-500 to-purple-700 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
                     <span className="relative text-white group-hover:text-light">View Project</span>
                   </a>

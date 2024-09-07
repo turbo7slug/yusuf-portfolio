@@ -4,7 +4,7 @@ const experiences = [
   {
     title: "ML Intern at IIITDM",
     company: "IIITDM Kancheepuram",
-    location: "Kancheepuram, India",
+    location: "Chennai, India",
     date: "May 2024 - July 2024",
     description: "Worked under Prof. S. Raghavan on predicting and classifying server loads. Developed and implemented machine learning models to forecast resource requirements."
   },
@@ -29,7 +29,7 @@ const Experience = () => {
               {/* Card Container */}
               <div className={`relative ${index % 2 === 0 ? "ml-12" : "mr-12"} w-80 bg-cardBg rounded-lg p-6 shadow-soft hover:shadow-lg transition-transform duration-300 transform hover:scale-105`}>
                 {/* Dot */}
-                <div className={`absolute top-1/2 transform -translate-y-1/2 ${index === 0 ? "left-[calc(100%+1rem)]" : index % 2 === 0 ? "left-[-1.5rem]" : "right-[calc(100%+1rem)]"} w-4 h-4 bg-purple-500 rounded-full z-10`} />
+                <div className={`absolute top-1/2 transform -translate-y-1/2 ${index === 0 ? "left-[calc(100%+1rem)]" : index % 2 === 0 ? "left-[-1.5rem]" : "right-[calc(100%+1rem)]"} w-4 h-4 bg-purple-500 rounded-full z-10 hidden sm:block`} />
                 <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
                 <h4 className="text-md font-medium text-gray-400 mb-2">{exp.company} | {exp.location}</h4>
                 <p className="text-muted mb-4">{exp.date}</p>
