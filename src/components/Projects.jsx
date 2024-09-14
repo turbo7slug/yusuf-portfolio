@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const projects = [
   { title: 'Real Estate App', description: 'A real estate management app built with MERN stack.', image: '/real_estate.png', link: 'https://mesa-verde-real-estate.vercel.app/' },
   { title: 'Prompt Hub', description: 'A Next JS platform to share your AI prompts', image: '/prompt_hub.png', link: 'https://prompt-hub-rust.vercel.app/' },
+  { title: 'YT-Playlist duration calculator', description: 'Get insights into youtube playlist durations', image: '/yt_playlist.png', link: 'https://yt-playlist-length-eta.vercel.app/' },
   { title: '2048 Puzzle Game', description: 'A clone of the 2048 puzzle game.', image: '/2048.png', link: 'https://turbo7slug.github.io/2048-puzzleGame/' },
   { title: 'E-Commerce Website', description: 'An online store built with Django.', image: 'https://via.placeholder.com/600x400', link: 'https://github.com/user/ecommerce-store' },
   { title: 'Life Tracker', description: 'Visualize your lifespan ', image: '/life.png', link: 'https://life-tracker-eight.vercel.app/' },
