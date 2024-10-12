@@ -5,9 +5,9 @@ const projects = [
   { title: 'Prompt Hub', description: 'A Next JS platform to share your AI prompts', image: '/prompt_hub.png', link: 'https://prompt-hub-rust.vercel.app/' },
   { title: 'YT-Playlist duration calculator', description: 'Get insights into youtube playlist durations', image: '/yt_playlist.png', link: 'https://yt-playlist-length-eta.vercel.app/' },
   { title: '2048 Puzzle Game', description: 'A clone of the 2048 puzzle game.', image: '/2048.png', link: 'https://turbo7slug.github.io/2048-puzzleGame/' },
-  { title: 'E-Commerce Website', description: 'An online store built with Django.', image: 'https://via.placeholder.com/600x400', link: 'https://github.com/user/ecommerce-store' },
+  { title: 'Socratic Chat-bot', description: 'A chat bot that helps you learn using the Socratic method', image: 'chat_bot.png', link: 'https://socrates-chat-bot.vercel.app/' },
   { title: 'Life Tracker', description: 'Visualize your lifespan ', image: '/life.png', link: 'https://life-tracker-eight.vercel.app/' },
-  { title: 'Chat Application', description: 'A real-time chat app using Socket.io.', image: 'https://via.placeholder.com/600x400', link: 'https://github.com/user/chat-application' },
+  
 ];
 
 const Projects = () => {
